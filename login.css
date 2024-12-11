@@ -1,0 +1,123 @@
+:root {
+    --color-gray-dark: #797979;
+    --color-gray-light: #d9d9d9;
+    --color-blue: #1c5cff;
+    --color-white: #ffffff;
+    --color-border-light: #dadada;
+    --color-gray-body: #efefef;
+    --color-blue-light: #3d74ff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif; /* Assuming you are using Helvetica */
+  }
+  
+  body {
+    background-color: var(--color-gray-body); /* Light Gray Background */
+    color: var(--color-gray-dark); /* Dark Gray text color */
+  }
+  
+  main {
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: auto;
+    background-color: var(--color-white); /* White Background */
+  }
+  
+  h1 {
+    color: var(--color-blue); /* Blue color for header */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .form-floating .form-control {
+    color: var(--color-gray-dark); /* Dark Gray text */
+    border: 1px solid var(--color-blue); /* Blue border */
+    border-radius: 5px;
+    box-shadow: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-floating .form-control:focus {
+    border-color: var(--color-blue-light); /* Light Blue border */
+    box-shadow: 0 0 0 0.2rem rgba(61, 116, 255, 0.25); /* Light Blue glow */
+  }
+  
+  label {
+    color: var(--color-gray-dark); /* Dark Gray labels */
+    font-weight: bold;
+  }
+  
+  .checkbox label {
+    color: var(--color-gray-dark);
+  }
+  
+  button {
+    background-color: var(--color-blue-light); /* Light Blue button */
+    color: var(--color-white); /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--color-blue); /* Blue on hover */
+  }
+  
+  .btn-custom-2 {
+    background-color: var(--color-blue); /* Blue */
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .btn-custom-2:hover {
+    background-color: var(--color-blue-light); /* Light Blue */
+  }
+  
+  .checkbox input {
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 480px) {
+    main {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Custom styling for round button */
+  .round-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color-blue); /* Blue */
+    color: var(--color-white); /* White */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .round-btn:hover {
+    background-color: #003ea1; /* Darker Blue */
+  }
+  
